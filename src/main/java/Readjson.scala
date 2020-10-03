@@ -29,7 +29,7 @@ object Readjson {
     
   BeaconSelectExprDF.write.mode("overWrite").format(fileformat).save(outPutPath)
   
-  
+  BeaconSelectExprDF.show
   }
 
 }
