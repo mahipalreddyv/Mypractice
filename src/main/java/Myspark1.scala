@@ -13,6 +13,6 @@ def main(args: Array[String]) = {
     
    //val reduceRDD=ReadRdd.flatMap(x => x.split(",")).map(x => x).filter(f => f.startsWith("h",1)).map(a => (a,1)).coalesce(1).reduceByKey(_+_)
    var patternMatchRDD=ReadRdd.map(line=> line.split(",")).map{x =>Employee(x(0),x(1),x(2))}
-  // patternMatchRDD.foreach(println)  
+  // patternMatchRDD.foreach(println) ;
 }
 }
