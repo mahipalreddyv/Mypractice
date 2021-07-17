@@ -8,7 +8,7 @@ def main(args: Array[String]) = {
     val conf = new SparkConf().setAppName("Mysparkwordcount").setMaster("local[*]")
     val sc = new SparkContext(conf)
     val spark =new SQLContext(sc)
-    
+    println("test")
     var ReadRdd=sc.textFile("D:\\csv_sample\\cpbss_stat.csv")
     
    //val reduceRDD=ReadRdd.flatMap(x => x.split(",")).map(x => x).filter(f => f.startsWith("h",1)).map(a => (a,1)).coalesce(1).reduceByKey(_+_)
